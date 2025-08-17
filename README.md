@@ -1,4 +1,4 @@
-Live Here ➡️ https://quiz-hub-omega.vercel.app/
+Live Here ➡️ 
 
 ## TECH STACK USED:
 ### BACKEND:
