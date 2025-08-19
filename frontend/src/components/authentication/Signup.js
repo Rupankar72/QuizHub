@@ -53,7 +53,7 @@ const Signup = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:5000/user",
+        "https://quizhub-d4lt.onrender.com/user",
         { name, email, isTeacher, password },
         config
       );

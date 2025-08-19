@@ -40,7 +40,7 @@ const Login = () => {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/user/login",
+        "https://quizhub-d4lt.onrender.com/user/login",
         { email, password },
         config
       );

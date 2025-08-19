@@ -20,7 +20,7 @@ const ProfilePage = () => {
       };
       try {
         const response = await axios.get(
-          `http://localhost:5000/performance/proficiency?uid=${userInfo._id}`,
+          `https://quizhub-d4lt.onrender.com/performance/proficiency?uid=${userInfo._id}`,
           config
         );
         setProficiencyArr(response.data);
@@ -51,7 +51,7 @@ const ProfilePage = () => {
     };
     try {
       const isResetDone = await axios.get(
-        `http://localhost:5000/performance/deletehistory?uid=${userInfo._id}`,
+        `https://quizhub-d4lt.onrender.com/performance/deletehistory?uid=${userInfo._id}`,
         config
       );
       if (isResetDone) {

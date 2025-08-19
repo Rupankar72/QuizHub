@@ -45,7 +45,7 @@ const TestPage = () => {
         },
       };
       const response = await axios.get(
-        `http://localhost:5000/quiz/languages`,
+        `https://quizhub-d4lt.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -65,7 +65,7 @@ const TestPage = () => {
           },
         };
         const response = await axios.post(
-          "http://localhost:5000/quiz/questions",
+          "https://quizhub-d4lt.onrender.com/quiz/questions",
           {
             language_id: lang_id,
             category: category,
@@ -144,7 +144,7 @@ const TestPage = () => {
         },
       };
       const response = await axios.post(
-        "http://localhost:5000/quiz/answers",
+        "https://quizhub-d4lt.onrender.com/quiz/answers",
         dataToSend,
         config
       );

@@ -31,7 +31,7 @@ const LeaderboardPage = () => {
         },
       };
       const response = await axios.get(
-        `http://localhost:5000/quiz/languages`,
+        `https://quizhub-d4lt.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -56,7 +56,7 @@ const LeaderboardPage = () => {
       };
       try {
         const response = await axios.get(
-          `http://localhost:5000/performance/leaderboard?lang_id=${selectedLangId}`,
+          `https://quizhub-d4lt.onrender.com/performance/leaderboard?lang_id=${selectedLangId}`,
           config
         );
         setLeaderboardData(response.data);

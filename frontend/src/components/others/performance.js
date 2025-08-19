@@ -70,7 +70,7 @@ const PerformanceGraph = () => {
         },
       };
       const response = await axios.get(
-        `http://localhost:5000/quiz/languages`,
+        `https://quizhub-d4lt.onrender.com/quiz/languages`,
         config
       );
       setLanguages(response.data);
@@ -88,7 +88,7 @@ const PerformanceGraph = () => {
         },
       };
       const response = await axios.get(
-        `http://localhost:5000/performance?uid=${userInfo._id}&lang_id=${lang_id}`,
+        `https://quizhub-d4lt.onrender.com/performance?uid=${userInfo._id}&lang_id=${lang_id}`,
         config
       );
       setPerformanceData(response.data);
